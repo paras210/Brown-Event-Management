@@ -1,7 +1,8 @@
 import './App.css';
+import EventList from './components/EventList';
 import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/LoginModal';
+
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />}/>
+        <Route path="/listevent" element={<EventList />} />
+        
       </Routes>
     </Router>
   );
